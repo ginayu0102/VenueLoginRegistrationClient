@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="095aa34f-596d-4180-b5e8-2d838a652de3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1816/VenueLoginService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VenueLoginService.xsd" MetadataType="Schema" ID="ab7e0095-496f-4049-95ae-fc56cceafb39" SourceId="1" SourceUrl="http://localhost:1816/VenueLoginService.svc?xsd=xsd0" />
+    <MetadataFile FileName="VenueLoginService.disco" MetadataType="Disco" ID="2cc36aff-3bc1-43e4-a235-f8d4d0f9e311" SourceId="1" SourceUrl="http://localhost:1816/VenueLoginService.svc?disco" />
+    <MetadataFile FileName="VenueLoginService.wsdl" MetadataType="Wsdl" ID="8b7e2dd9-f9b3-4985-92f2-d5b9c150dfa3" SourceId="1" SourceUrl="http://localhost:1816/VenueLoginService.svc?wsdl" />
+    <MetadataFile FileName="VenueLoginService1.xsd" MetadataType="Schema" ID="aaf6d480-7b38-4e96-a2cd-5112fa0b157d" SourceId="1" SourceUrl="http://localhost:1816/VenueLoginService.svc?xsd=xsd1" />
+    <MetadataFile FileName="VenueLoginService2.xsd" MetadataType="Schema" ID="b414c80e-1f37-496e-9a32-f59619e00346" SourceId="1" SourceUrl="http://localhost:1816/VenueLoginService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
