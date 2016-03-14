@@ -19,6 +19,24 @@
   <wsdl:message name="IVenueLoginService_VenueRegistration_OutputMessage">
     <wsdl:part name="parameters" element="tns:VenueRegistrationResponse" />
   </wsdl:message>
+  <wsdl:message name="IVenueLoginService_AddArtist_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddArtist" />
+  </wsdl:message>
+  <wsdl:message name="IVenueLoginService_AddArtist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddArtistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVenueLoginService_AddShow_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddShow" />
+  </wsdl:message>
+  <wsdl:message name="IVenueLoginService_AddShow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddShowResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVenueLoginService_AddShowDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddShowDetail" />
+  </wsdl:message>
+  <wsdl:message name="IVenueLoginService_AddShowDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddShowDetailResponse" />
+  </wsdl:message>
   <wsdl:portType name="IVenueLoginService">
     <wsdl:operation name="VenueLogin">
       <wsdl:input wsaw:Action="http://tempuri.org/IVenueLoginService/VenueLogin" message="tns:IVenueLoginService_VenueLogin_InputMessage" />
@@ -27,6 +45,18 @@
     <wsdl:operation name="VenueRegistration">
       <wsdl:input wsaw:Action="http://tempuri.org/IVenueLoginService/VenueRegistration" message="tns:IVenueLoginService_VenueRegistration_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IVenueLoginService/VenueRegistrationResponse" message="tns:IVenueLoginService_VenueRegistration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddArtist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVenueLoginService/AddArtist" message="tns:IVenueLoginService_AddArtist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVenueLoginService/AddArtistResponse" message="tns:IVenueLoginService_AddArtist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddShow">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVenueLoginService/AddShow" message="tns:IVenueLoginService_AddShow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVenueLoginService/AddShowResponse" message="tns:IVenueLoginService_AddShow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddShowDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVenueLoginService/AddShowDetail" message="tns:IVenueLoginService_AddShowDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVenueLoginService/AddShowDetailResponse" message="tns:IVenueLoginService_AddShowDetail_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IVenueLoginService" type="tns:IVenueLoginService">
@@ -42,6 +72,33 @@
     </wsdl:operation>
     <wsdl:operation name="VenueRegistration">
       <soap:operation soapAction="http://tempuri.org/IVenueLoginService/VenueRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddArtist">
+      <soap:operation soapAction="http://tempuri.org/IVenueLoginService/AddArtist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddShow">
+      <soap:operation soapAction="http://tempuri.org/IVenueLoginService/AddShow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddShowDetail">
+      <soap:operation soapAction="http://tempuri.org/IVenueLoginService/AddShowDetail" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
