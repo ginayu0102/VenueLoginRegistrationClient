@@ -43,4 +43,13 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ShowDetailLite" nillable="true" type="tns:ShowDetailLite" />
+  <xs:complexType name="FanLite">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FPassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FUsername" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FanLite" nillable="true" type="tns:FanLite" />
 </xs:schema>

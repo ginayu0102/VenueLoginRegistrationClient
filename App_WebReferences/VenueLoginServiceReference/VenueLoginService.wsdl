@@ -37,6 +37,24 @@
   <wsdl:message name="IVenueLoginService_AddShowDetail_OutputMessage">
     <wsdl:part name="parameters" element="tns:AddShowDetailResponse" />
   </wsdl:message>
+  <wsdl:message name="IVenueLoginService_FanLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:FanLogin" />
+  </wsdl:message>
+  <wsdl:message name="IVenueLoginService_FanLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FanLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVenueLoginService_FanRegistration_InputMessage">
+    <wsdl:part name="parameters" element="tns:FanRegistration" />
+  </wsdl:message>
+  <wsdl:message name="IVenueLoginService_FanRegistration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FanRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVenueLoginService_AddFanArtist_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddFanArtist" />
+  </wsdl:message>
+  <wsdl:message name="IVenueLoginService_AddFanArtist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddFanArtistResponse" />
+  </wsdl:message>
   <wsdl:portType name="IVenueLoginService">
     <wsdl:operation name="VenueLogin">
       <wsdl:input wsaw:Action="http://tempuri.org/IVenueLoginService/VenueLogin" message="tns:IVenueLoginService_VenueLogin_InputMessage" />
@@ -57,6 +75,18 @@
     <wsdl:operation name="AddShowDetail">
       <wsdl:input wsaw:Action="http://tempuri.org/IVenueLoginService/AddShowDetail" message="tns:IVenueLoginService_AddShowDetail_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IVenueLoginService/AddShowDetailResponse" message="tns:IVenueLoginService_AddShowDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FanLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVenueLoginService/FanLogin" message="tns:IVenueLoginService_FanLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVenueLoginService/FanLoginResponse" message="tns:IVenueLoginService_FanLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FanRegistration">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVenueLoginService/FanRegistration" message="tns:IVenueLoginService_FanRegistration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVenueLoginService/FanRegistrationResponse" message="tns:IVenueLoginService_FanRegistration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddFanArtist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVenueLoginService/AddFanArtist" message="tns:IVenueLoginService_AddFanArtist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVenueLoginService/AddFanArtistResponse" message="tns:IVenueLoginService_AddFanArtist_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IVenueLoginService" type="tns:IVenueLoginService">
@@ -99,6 +129,33 @@
     </wsdl:operation>
     <wsdl:operation name="AddShowDetail">
       <soap:operation soapAction="http://tempuri.org/IVenueLoginService/AddShowDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FanLogin">
+      <soap:operation soapAction="http://tempuri.org/IVenueLoginService/FanLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FanRegistration">
+      <soap:operation soapAction="http://tempuri.org/IVenueLoginService/FanRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFanArtist">
+      <soap:operation soapAction="http://tempuri.org/IVenueLoginService/AddFanArtist" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
